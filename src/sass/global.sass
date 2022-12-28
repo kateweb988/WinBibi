@@ -1,0 +1,132 @@
+body
+   font-family: 'Montserrat', sans-serif
+   font-weight: 400
+   background: #FFFFFF
+   font-size: 14px
+   line-height: 100%
+   color: $black
+a
+   text-decoration: none
+   box-sizing: border-box
+   &:hover 
+      color: $orange
+.container
+   padding: 0 15px
+   max-width: 1787px
+   margin: 0 auto
+   @media ( max-width: 1199px )
+      max-width: 960px
+   @media (max-width: 991px)
+      max-width: 720px
+   @media (max-width: 767px)
+      max-width: 540px
+.d-flex
+   display: flex
+.body-wrap
+   overflow: hidden
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+footer
+   margin-top: auto
+h1
+   font-weight: 700
+   font-size: 36px
+   line-height: 44px
+   text-align: center
+   color: #FFFFFF
+   margin: 0
+.sub 
+   font-weight: 400
+   font-size: 14px
+   line-height: 17px
+   text-align: center
+   color: #FFFFFF
+   max-width: 925px
+   width: 100%
+   margin: 7px auto 0
+ul 
+   margin: 0
+   padding: 0
+   list-style-type: none
+p
+   margin: 0
+.svg 
+   transition: 0.5s ease
+a
+   transition: color 0.5s ease
+   box-sizing: border-box
+li
+   a
+      transition: color 0.5s ease
+button
+   cursor: pointer
+   box-sizing: border-box
+textarea
+   transition: border 0.5s
+   box-sizing: border-box
+   &:focus
+      transition: border 0.5s
+      outline: none
+      border: 1px solid $orange !important
+input
+   transition: border 0.5s
+   box-sizing: border-box
+   border: 1px solid #fff
+   &.disabled
+      pointer-events: none
+   &:focus 
+      border: 1px solid $orange !important
+      transition: border 0.5s
+   &:focus-visible
+      outline: initial
+path
+   transition: fill 0.5s
+div 
+   box-sizing: border-box
+.icon 
+   transition: fill 0.5s
+.btn 
+   display: flex
+   align-items: center
+   justify-content: center
+   transition: color 0.5s, background 0.5s, border 0.5s, box-shadow 0.5s
+   background: linear-gradient(90deg, #DCAC0F 0%, #FBC963 100%)
+   box-shadow: 0px 8px 25px rgba(240, 187, 15, 0.2)
+   border-radius: 5px
+   width: 299px
+   height: 54px
+   font-weight: 600
+   font-size: 18px
+   line-height: 22px
+   color: #FFFFFF
+   &:hover 
+      -webkit-box-shadow: rgb(220 172 15) 0px 0px 16px 2px
+      -moz-box-shadow: rgb(220 172 15) 0px 0px 16px 2px
+      box-shadow: rgb(220 172 15) 0px 0px 16px 2px
+      color: white
+.btn1 
+   width: 128px
+   height: 40px
+   font-size: 12px
+   color: #2D2D2D
+   background: #FFFFFF
+   border: 1px solid #2D2D2D
+   box-shadow: initial !important
+   &:hover 
+      background: #2D2D2D
+      color: #FFFFFF
+      border: 1px solid #2D2D2D
+.btn2 
+   width: 128px
+   height: 40px
+   background: #000000
+   color: #FFFFFF
+   font-size: 12px
+   border: 1px solid #000000
+   box-shadow: initial !important
+   &:hover 
+      color: #000000
+      background: #FFFFFF
+      border: 1px solid #000000

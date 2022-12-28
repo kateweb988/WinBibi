@@ -1,0 +1,666 @@
+@media screen and (max-width: 1499px)
+   .main__center
+      width: 44%
+   .main__block 
+      width: 26%
+      max-width: 26%
+   .main-form__item
+      width: 47%
+   .main__el
+      flex-direction: column
+   .main__picture
+      margin-right: 0
+      margin-bottom: 5px
+@media screen and (max-width: 1399px)
+   .main__li 
+      width: 95%
+   .main__wrap
+      padding: 24px 32px 79px
+@media screen and (max-width: 1299px)
+   .main-form__code 
+      left: 10px
+      max-width: 177px
+      white-space: nowrap
+   .nav__list
+      left: 0
+      justify-content: center
+   .nav__li
+      margin-right: 40px
+   .faq__flex .main__form 
+      max-width: 275px
+   .accordeon__button p
+      max-width: 526px
+@media screen and (max-width: 1199px)
+   .main-confirm__info br
+      display: none
+   .burger
+      position: fixed
+      flex-direction: column
+      right: -150%
+      top: 0px
+      z-index: 100000
+      display: flex
+      box-sizing: border-box
+      transition: .3s  ease-in-out
+      width: auto
+      height: auto
+      background-color: #000c28
+   .burger.active
+      right: 0px
+      top: 0px
+      max-width: 100%
+      padding: 70px 30px
+      height: 100vh
+      width: 100%
+   .menu
+      display: flex
+      position: relative
+      top: -24px
+      right: 0px
+   .menu .button
+      position: relative
+      display: flex
+      z-index: 1000000
+      right: 0px
+      top: 24px
+      width: 40px
+      height: 19px
+      align-items: center
+      justify-content: center
+      margin-left: auto
+   .menu .button.active
+      position: fixed
+      right: 15px
+      top: 38px
+   .menu .button span
+      position: absolute
+      top: calc(50% - 1px)
+      transition: .3s  ease-in-out
+      width: 24px
+      height: 3px
+      border-radius: 1px
+      background-color: $orange
+   .menu .button span::before
+      content: ''
+      position: absolute
+      top: -8px
+      transition: .3s ease-in-out
+      width: 24px
+      height: 3px
+      border-radius: 1px
+      background-color: $orange
+   .menu .button span::after
+      content: ''
+      position: absolute
+      bottom: -8px
+      transition: .3s ease-in-out
+      width: 24px
+      height: 3px
+      border-radius: 1px
+      background-color: $orange
+   .menu .button.active span
+      background-color: transparent !important
+      width: 24px
+   .menu .button.active span::before
+      content: ''
+      width: 24px
+      top: calc(50% - 2px)
+      transform: rotate(45deg)
+   .menu .button.active span::after
+      content: ''
+      bottom: calc(50% - 1px)
+      transform: rotate(-44deg)
+      background-color: $orange
+      width: 24px
+   .nav__list 
+      display: none
+   .burger
+      .main_submenu--icon
+         fill: white
+         top: calc(50% - 2px)
+      .main_submenu:hover .main_submenu--icon
+         top: calc(50% - 8px)
+      .nav__link
+         color: white
+      .nav__list 
+         display: block
+      .nav__content 
+         justify-content: center
+         margin-bottom: 60px
+      .nav__li 
+         margin-right: 0
+         margin-bottom: 20px
+         text-align: center
+      .lang_select--selected
+         color: white
+   .main__box 
+      flex-direction: column
+      margin: 40px auto 0
+      width: 100%
+      align-items: center
+      max-width: 700px
+   .main__block
+      width: 100%
+      max-width: 100%
+      margin-bottom: 25px
+      &_1 
+         order: 1
+      &_2
+         order: 2
+   .main__center 
+      margin: 0px auto
+      width: 100%
+      order: 3
+   .main__li
+      width: 98%
+   .main__coins
+      flex-wrap: wrap
+      justify-content: center
+   .main__one
+      margin: 10px
+   .footer__box
+      flex-direction: column
+      align-items: center
+   .footer__li
+      margin: 10px
+   .footer__list 
+      justify-content: center
+      margin-bottom: 25px
+   .footer__best
+      text-align: center
+   .footer__flex
+      justify-content: center
+      margin: 36px auto 0
+   .pay__code
+      white-space: nowrap
+      text-overflow: ellipsis
+      max-width: 340px
+      overflow: hidden
+   .main-area__flex
+      flex-direction: column
+      .main__search
+         top: 34px
+      .main__input
+         margin: 20px auto 0
+   .main-area__flex .lang_select:last-child
+      margin-right: 0
+   .main-area__info
+      text-align: center
+      margin-bottom: 0px
+      margin-left: 0
+   .main-table__sum
+      font-size: 12px
+   .main-table__info
+      font-size: 12px
+   .main-table__item:first-child:after
+      margin: 0 10px
+   .main-table__status
+      font-size: 12px
+   .profile__table tr td:last-child
+      border-bottom: none
+   .profile__table td[data-label=""]:before
+      display: none
+   .main-table__link
+      margin: 0 auto
+      transform: rotate(90deg)
+   .profile__table td[data-label="Отдаю / Получаю"]
+      flex-direction: column
+      align-items: center
+      &:before 
+         margin: 10px 0 -10px 0
+   .profile__table td[data-label="Ваш бонус"]
+      flex-direction: column
+      align-items: center
+      &:before 
+         margin: 0 0 5px
+   .burger .nav__personal  .main_submenu--icon 
+      top: calc(50% - 4px)
+   .main-settings__flex
+      flex-wrap: wrap
+      justify-content: center
+   .main-settings__right
+      margin: 40px auto 0
+   .main-settings__item
+      margin-right: 0
+      &:nth-child(1)
+         margin-right: 40px
+   .faq__box
+      flex-direction: column
+   .faq__left
+      max-width: 100%
+   .accordeon__button  p
+      max-width: 85%
+   .faq__right
+      margin: 25px auto 0
+   .con__social 
+      margin-right: 40px
+   .ref__block_2
+      max-width: 100%
+   .ref__block .profile__table tr td:first-child
+      padding-left: 0
+   .ref__block .adaptive-table tbody td
+      padding: 10px 0
+   .ref__block .main-table__info
+      line-height: 100% 
+@media ( max-width: 991px )
+   h1 
+      font-size: 26px
+      line-height: 120%
+   .nav 
+      padding: 15px 0
+   .sub
+      font-size: 11px
+   .main-confirm
+      padding: 28px 20px 40px
+   .main-confirm .main-form__item
+      width: 44%
+   .main-confirm__wrap
+      padding: 20px
+   .main-confirm__sum
+      font-size: 12px
+      white-space: nowrap
+   .main-confirm__span
+      font-size: 12px
+   .main-confirm__link
+      margin-top: 2px
+      font-size: 11px
+   .pay__wrap 
+      width: 170px
+      height: auto
+      padding: 16px 15px 24px
+   .pay__qr
+      width: 100%
+      height: auto
+   .adaptive-table tr
+      width: 100%
+      max-width: 400px
+      margin: 0 0 20px
+   .main-settings__item
+      max-width: 250px
+   .main-settings__btn
+      width: 100%
+   .faq__flex
+      flex-direction: column 
+      align-items: center
+   .faq__flex .main__form
+      max-width: 100%
+      margin-top: 25px
+   .faq__item:last-child
+      padding-bottom: 0
+   .ref__block_2 .ref__one
+      text-align: center
+      margin-left: 0
+@media screen and (max-width: 767px)
+   .nav__content
+      display: none
+   .burger .nav__content
+      display: flex
+   .main__wrap 
+      padding: 24px 15px 41px
+   .main-confirm__rights 
+      font-size: 12px
+      line-height: 15px
+   .main-confirm .main-form__flex
+      flex-direction: column
+      align-items: center
+   .main-confirm .main-form__item
+      width: 100%
+   .main-confirm__transfer
+      margin: 10px auto
+      transform: rotate(90deg)
+   .main-confirm
+      margin-top: 40px
+   .pay__box 
+      flex-direction: column
+   .pay__item
+      text-align: center
+   .pay__block
+      margin: 0 auto
+   .pay__content
+      width: 100%
+   .pay__wrap
+      margin: 25px auto 10px
+      width: 220px
+   .main-area__left 
+      flex-direction: column
+      width: 100%
+   .main-area__flex .main__form
+      max-width: 100%
+   .main-area .main-confirm__title
+      margin-left: 0
+      text-align: center
+   .main-area__link
+      margin-right: 20px
+      font-size: 16px
+   .bread__link
+      font-size: 12px
+   .bread__li:after
+      font-size: 12px
+   .main-area__tabs
+      margin-bottom: 20px
+   .main-area__flex .lang_select
+      margin-right: 0
+      margin-bottom: 10px
+      width: 100%
+      &:last-child
+         margin-bottom: 0
+   .main-area .main-confirm__wrap
+      padding: 25px 0 0px
+   .main-table__info
+      line-height: 22px
+   .profile__table td[data-label="Отдаю / Получаю"]:before 
+      margin: 0px
+   .main-settings__item
+      max-width: 100%   
+      margin-right: 0 !important
+      margin-bottom: 40px
+   .main-settings__right 
+      margin: 0px auto 0
+   .accordeon__button p
+      font-size: 16px
+   .panel__text
+      font-size: 12px
+      line-height: 22px
+   .accordeon__item
+      margin-bottom: 10px
+   .con__flex
+      flex-direction: column 
+      justify-content: center
+   .con__social
+      margin-right: 0 !important
+      margin-bottom: 10px
+      min-width: 180px
+   .con__box .faq__item
+      text-align: center
+   .con__btn
+      margin: 17px auto 0
+   .con__box .faq__item
+      padding: 20px 0
+   .ref__sub
+      font-size: 14px
+      margin-bottom: 10px
+   .ref__title 
+      font-size: 25px
+      line-height: 32px
+      margin-bottom: 15px
+   .ref__text 
+      font-size: 12px
+      line-height: 20px
+      margin-bottom: 5px
+   .ref__block
+      padding: 20px 14px 30px
+      margin-bottom: 40px
+   .ref__one 
+      font-weight: 600
+      font-size: 18px
+      line-height: 23px
+      margin: 0 0 10px 35px
+   .ref__code
+      overflow: hidden
+      max-width: 250px
+      text-overflow: ellipsis
+   .ref__big 
+      font-size: 24px
+      margin-bottom: 20px
+      text-align: center
+   .ref__flex
+      margin-bottom: 20px
+      flex-direction: column
+   .ref__wrap
+      margin-right: 0
+      margin-bottom: 20px
+@media screen and (max-width: 576px)
+   input, textarea, select
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+   .nav__links
+      flex-direction: column
+      align-items: center
+   .burger .nav__content
+      flex-direction: column
+      align-items: center
+   .nav__links a
+      margin-left: 0
+      margin-bottom: 10px
+   .lang_select 
+      left: 14px
+      margin-bottom: 20px
+   .lang_select.main_submenu:hover .main_submenu--list 
+      transform: translateX(-56%) translateY(-51%)
+   .main__block .lang_select
+      left: 0
+   .main__top 
+      margin: 0 10px
+   .main__block .main_submenu:hover .main_submenu--list
+      transform: translateX(-50%) translateY(-41%)
+   .main__search
+      top: 13px
+   .main__title
+      text-align: center
+   .main__up
+      flex-direction: column
+      align-items: center
+      padding-bottom: 10px
+      margin-bottom: 10px
+   .main__item
+      text-align: center !important
+      margin-bottom: 10px
+   .main-form__flex
+      flex-direction: column
+   .main-form__item
+      width: 100%
+   .main-form__transfer
+      margin: 10px auto
+   .main-form__code 
+      max-width: 240px
+   .main 
+      padding: 25px 0 40px
+   .main__block
+      height: auto
+   .main__box
+      margin-top: 30px
+   .main__li
+      height: 40px
+   .main__li.active:after
+      top: 17px
+   .main-form__btn
+      width: 100%
+   .checkbox p
+      font-size: 12px
+   .checkbox 
+      margin: -20px 0 20px
+   .main__bottom
+      flex-direction: column
+   .main__el
+      margin-bottom: 10px
+      &:last-child
+         margin-bottom: 0
+   .main__coins
+      margin-top: 40px
+   .footer
+      padding: 25px 0 30px
+   .footer__site
+      margin-left: 10px
+   .footer__flex
+      flex-direction: column
+   .footer__logo
+      margin-right: 0
+      margin-bottom: 20px
+   .main-form__error
+      padding: 10px
+      height: auto
+      font-size: 12px
+   .main-confirm 
+      padding: 25px 10px 30px
+   .main-confirm__back
+      flex: 1 0 auto 
+      max-width: 42px
+   .main-confirm__step 
+      font-size: 13px
+      line-height: 16px
+      margin-left: 10px
+   .main-confirm__title 
+      font-size: 18px
+      line-height: 23px
+   .main-confirm__info 
+      font-size: 13px
+      line-height: 16px
+      margin-bottom: 20px
+   .main-confirm__num 
+      font-size: 12px
+      line-height: 18px
+      margin-bottom: 10px
+   .main-confirm__flex
+      margin-bottom: 10px
+   .main-confirm__flex img
+      margin-right: 10px
+   .main-confirm__block
+      width: 30px
+      height: 30px
+      margin-right: 10px
+   .main-confirm__icon
+      width: 18px
+   .main-confirm__content 
+      bottom: 18px
+      left: 6px
+      max-width: 276px
+   .main-confirm .main-form__flex
+      margin-bottom: 10px
+   .timer
+      margin-top: -10px
+   .pay__code
+      max-width: 166px
+   .pay__text 
+      font-size: 12px
+      margin-bottom: 10px
+   .pay__btn
+      width: 100%
+   .pay__area
+      width: 100%
+   .main-area__link 
+      margin-right: 20px
+      font-size: 12px
+      line-height: 100%
+      white-space: nowrap
+   .main-area__tabs 
+      margin-bottom: 10px
+      padding-bottom: 10px
+      overflow-x: auto
+      flex-wrap: initial
+   .main-area__flex
+      margin: 12px 15px 20px
+   .main-area__flex .main__input
+      font-size: 12px
+   .main-area__flex .lang_select
+      margin-right: 0
+      left: 0
+   .main-table__flex
+      flex-direction: column
+   .main-table__item:first-child:after
+      margin: 10px auto
+      transform: rotate(90deg)
+      background-size: 19px
+   .main-table__item
+      flex-direction: column
+   .profile__table td[data-label="Отдаю / Получаю"]:before
+      margin-bottom: 5px
+   .main-area .main-confirm__wrap
+      border: none
+   .main-area .lang_select.main_submenu:hover .main_submenu--list 
+      transform: translateX(-50%) translateY(-45%)
+   .burger .nav__personal .lang_select
+      margin-bottom: 0
+   .nav__personal .main_submenu:hover .main_submenu--list
+      transform: translateX(-56.7%) translateY(-24%)
+      width: 110.3%
+   .main-settings__flex
+      margin: 24px 15px 0
+   .main-settings__item
+      margin-bottom: 25px
+   .main-settings__row
+      flex-direction: column-reverse
+   .main-settings__photo
+      margin-bottom: 20px
+   .faq__left
+      padding: 20px 15px
+   .faq__name 
+      font-size: 18px
+      line-height: 25px
+      margin-bottom: 17px
+   .accordeon__button:after
+      right: 0 !important
+   .main__input
+      font-size: 11px
+   .faq__right
+      max-width: 100%
+      padding: 20px 15px
+      width: 100%
+   .faq__one 
+      font-size: 12px
+      line-height: 18px
+      margin: 9px 0 17px
+      text-align: center
+   .main-settings__btn
+      font-size: 16px
+   .faq__flex
+      margin-bottom: 20px
+   .con__name 
+      font-size: 14px
+      line-height: 18px
+   .con__mail 
+      font-size: 18px
+   .con__box 
+      .main-confirm__title
+         font-size: 25px
+   .rules__box .main-confirm__title
+      margin-bottom: 15px
+   .rules__title
+      margin-bottom: 10px
+      font-size: 14px
+   .rules__text 
+      font-size: 13px
+      line-height: 22px
+      margin-bottom: 10px
+   .rules__item 
+      margin-bottom: 25px
+   .ref__money
+      font-size: 25px
+   .ref__title 
+      font-size: 21px
+      line-height: 23px
+      margin-bottom: 15px
+   .ref__block
+      margin-top: 25px
+      padding-bottom: 10px
+   .ref__one
+      font-size: 16px
+   .ref__form
+      flex-direction: column
+   .ref__link
+      margin-left: 0
+      margin-top: 10px
+      width: 100%
+      max-width: 100%
+   .ref__code
+      top: 14px
+      bottom: inherit
+      font-size: 12px
+      max-width: 214px
+   .ref__wrap:nth-child(2)
+      height: auto
+   .ref__bonus 
+      margin-bottom: 4px
+      font-size: 14px
+      line-height: 20px
+   .popup
+      width: 100%
+      padding: 30px 20px
+   .enter__box 
+      padding: 28px 16px 20px
+      margin: 60px auto
+      width: 100%
+   .enter__name 
+      font-size: 24px
+      line-height: 31px
+      margin-bottom: 20px
