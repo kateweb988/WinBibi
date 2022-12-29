@@ -182,7 +182,7 @@ template {
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  background: #FFFFFF;
+  background: url(/img/bg.png) no-repeat center center/cover;
   font-size: 14px;
   line-height: 100%;
   color: #04152B;
@@ -371,54 +371,6 @@ div {
   border: 1px solid #000000;
 }
 
-@font-face {
-  font-family: "Suisse Intl";
-  src: url("SuisseIntl-Light.eot");
-  src: url("SuisseIntl-Light.eot?#iefix") format("embedded-opentype"), url("SuisseIntl-Light.woff2") format("woff2"), url("SuisseIntl-Light.woff") format("woff"), url("SuisseIntl-Light.ttf") format("truetype"), url("SuisseIntl-Light.svg#SuisseIntl-Light") format("svg");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Suisse Intl";
-  src: url("SuisseIntl-SemiBold.eot");
-  src: url("SuisseIntl-SemiBold.eot?#iefix") format("embedded-opentype"), url("SuisseIntl-SemiBold.woff2") format("woff2"), url("SuisseIntl-SemiBold.woff") format("woff"), url("SuisseIntl-SemiBold.ttf") format("truetype"), url("SuisseIntl-SemiBold.svg#SuisseIntl-SemiBold") format("svg");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Fuji";
-  src: url("Fuji-Medium.eot");
-  src: url("Fuji-Medium.eot?#iefix") format("embedded-opentype"), url("Fuji-Medium.woff2") format("woff2"), url("Fuji-Medium.woff") format("woff"), url("Fuji-Medium.ttf") format("truetype"), url("Fuji-Medium.svg#Fuji-Medium") format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Fuji";
-  src: url("Fuji-Bold.eot");
-  src: url("Fuji-Bold.eot?#iefix") format("embedded-opentype"), url("Fuji-Bold.woff2") format("woff2"), url("Fuji-Bold.woff") format("woff"), url("Fuji-Bold.ttf") format("truetype"), url("Fuji-Bold.svg#Fuji-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Broken Console";
-  src: url("BrokenConsole-BoldShadow.eot");
-  src: url("BrokenConsole-BoldShadow.eot?#iefix") format("embedded-opentype"), url("BrokenConsole-BoldShadow.woff2") format("woff2"), url("BrokenConsole-BoldShadow.woff") format("woff"), url("BrokenConsole-BoldShadow.ttf") format("truetype"), url("BrokenConsole-BoldShadow.svg#BrokenConsole-BoldShadow") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Broken Console";
-  src: url("BrokenConsole-Bold.eot");
-  src: url("BrokenConsole-Bold.eot?#iefix") format("embedded-opentype"), url("BrokenConsole-Bold.woff2") format("woff2"), url("BrokenConsole-Bold.woff") format("woff"), url("BrokenConsole-Bold.ttf") format("truetype"), url("BrokenConsole-Bold.svg#BrokenConsole-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
 .burger, .menu {
   display: none;
 }
@@ -507,8 +459,9 @@ div {
   padding: 15px 10px 15px 20px;
   white-space: nowrap;
   transition: color 0.2s;
-  color: black;
-  font-size: 12px;
+  font-weight: 400;
+  font-size: 13px;
+  color: #04152B;
 }
 .main_submenu--lnk-padding_equal {
   padding: 10px;
@@ -658,8 +611,18 @@ div {
   padding: 7px 15px 7px;
 }
 .nav__personal .main_submenu:hover .main_submenu--list {
-  width: 111%;
-  transform: translateX(-53%) translateY(-32%);
+  width: 100%;
+  transform: translateX(-50%) translateY(-12%);
+}
+.nav__personal .main_submenu:hover .main_submenu--list:before {
+  left: 0;
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  top: -25px;
 }
 .nav__box {
   justify-content: space-between;
@@ -1729,17 +1692,14 @@ html *::-webkit-scrollbar-thumb {
   border-bottom: 1px solid #EBEBEB;
   box-sizing: border-box;
 }
-.profile__table tr td:first-child {
-  border-radius: 0px 0px 0px 20px;
-}
-.profile__table tr td:last-child {
-  border-radius: 0px 0px 20px 0px;
-}
 .profile__table thead tr {
   background: transparent;
   padding: 10px 20px 10px 6px;
   border-spacing: initial;
   box-shadow: initial;
+}
+.profile__table thead tr:hover {
+  background: transparent;
 }
 .profile__table thead tr td {
   font-weight: 600;
@@ -1768,6 +1728,10 @@ html *::-webkit-scrollbar-thumb {
   border-spacing: inherit;
   background: #FFFFFF;
   margin-bottom: 15px;
+  transition: 0.3s background;
+}
+.profile__row:hover {
+  background: #FFEAA7;
 }
 .profile__row td:nth-child(1) {
   padding-left: 36px;
@@ -2541,6 +2505,19 @@ td.red .main-table__status:before {
   width: 100%;
 }
 
+.nav__personal {
+  padding: 0;
+}
+.nav__personal .lang_select {
+  height: 100%;
+  width: 100%;
+  padding: 7px;
+}
+
+.mob__select {
+  display: none;
+}
+
 @media screen and (max-width: 1499px) {
   .main__center {
     width: 44%;
@@ -3127,7 +3104,11 @@ td.red .main-table__status:before {
     margin: 0 10px;
   }
   .main__block .main_submenu:hover .main_submenu--list {
-    transform: translateX(-50%) translateY(-41%);
+    transform: translateX(-50%) translateY(-40%);
+    border-radius: 0 0 5px 5px !important;
+    border: 1px solid #E0E0E0 !important;
+    border-top: none !important;
+    width: 100.77% !important;
   }
   .main__search {
     top: 13px;
@@ -3321,8 +3302,8 @@ td.red .main-table__status:before {
     margin-bottom: 0;
   }
   .nav__personal .main_submenu:hover .main_submenu--list {
-    transform: translateX(-56.7%) translateY(-24%);
-    width: 110.3%;
+    transform: translateX(-56.7%) translateY(-12%);
+    width: 100%;
   }
   .main-settings__flex {
     margin: 24px 15px 0;
@@ -3443,5 +3424,42 @@ td.red .main-table__status:before {
     font-size: 24px;
     line-height: 31px;
     margin-bottom: 20px;
+  }
+  .ref__input {
+    max-width: 100%;
+  }
+  .mob__select {
+    display: flex;
+    margin-top: -8px;
+  }
+  .mob__select .main__content {
+    font-size: 14px;
+  }
+  .mob__select .main__link {
+    display: flex;
+    padding: 0px 0 0 10px;
+  }
+  .mob__select:hover {
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+  }
+  .main__list {
+    display: none;
+  }
+  .main__top .main__input {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #04152B;
+  }
+  .mob__select .main_submenu--list {
+    transform: translateX(-50%) translateY(-11%) !important;
+    border-radius: 0 0 5px 5px !important;
+    border: 1px solid #E0E0E0 !important;
+    border-top: none !important;
+    width: 100.77% !important;
+  }
+  .main__block_2 .mob__select {
+    margin-top: 0;
   }
 }
