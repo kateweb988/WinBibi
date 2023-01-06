@@ -622,6 +622,7 @@ html *::-webkit-scrollbar-thumb
          margin: 18px 0 20px
       &__btn 
          border: none
+         margin: 0 auto
          &_login 
             margin: 0 auto
    &__bottom 
@@ -896,6 +897,10 @@ html *::-webkit-scrollbar-thumb
       display: flex
    &__site 
       margin-left: 15px
+      &.face 
+         .icon 
+            width: 40px
+            height: 40px
       &:first-child
          margin-left: 0
       .icon 
@@ -1452,7 +1457,7 @@ td.red
 .con 
    &__box 
       .faq__item
-         padding: 30px 0
+         padding: 30px 0 10px
          &:after
             bottom: 0
          &_1
@@ -1476,9 +1481,11 @@ td.red
    &__flex 
       align-items: center
       margin-top: 20px
+      flex-wrap: wrap
    &__social 
       align-items: center
-      margin-right: 47px
+      margin: 0 47px 15px 0
+      width: 25%
       &:last-child
          margin-right: 0
       &:hover 

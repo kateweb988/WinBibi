@@ -1101,6 +1101,7 @@ html *::-webkit-scrollbar-thumb {
 }
 .main-form__btn {
   border: none;
+  margin: 0 auto;
 }
 .main-form__btn_login {
   margin: 0 auto;
@@ -1442,6 +1443,10 @@ html *::-webkit-scrollbar-thumb {
 }
 .footer__site {
   margin-left: 15px;
+}
+.footer__site.face .icon {
+  width: 40px;
+  height: 40px;
 }
 .footer__site:first-child {
   margin-left: 0;
@@ -2123,7 +2128,7 @@ td.red .main-table__status:before {
 }
 
 .con__box .faq__item {
-  padding: 30px 0;
+  padding: 30px 0 10px;
 }
 .con__box .faq__item:after {
   bottom: 0;
@@ -2153,10 +2158,12 @@ td.red .main-table__status:before {
 .con__flex {
   align-items: center;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 .con__social {
   align-items: center;
-  margin-right: 47px;
+  margin: 0 47px 15px 0;
+  width: 25%;
 }
 .con__social:last-child {
   margin-right: 0;
@@ -2839,6 +2846,9 @@ td.red .main-table__status:before {
   }
   .ref__block .main-table__info {
     line-height: 100%;
+  }
+  .con__social {
+    width: 37%;
   }
 }
 @media (max-width: 991px) {
